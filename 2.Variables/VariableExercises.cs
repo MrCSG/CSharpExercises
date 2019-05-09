@@ -11,8 +11,8 @@ namespace CSharpExercises
             string lastname = Console.ReadLine();
 
             Console.WriteLine("El nombre ingresado antes de llamar a la función que muestra el nombre con exclamación: {0}", firstname);
-            ShowNameWithExclamationByRef(ref firstname);
-            // ShowNameWithExclamationByVal(firstText);
+            //ShowNameWithExclamationByRef(ref firstname);
+            ShowNameWithExclamationByVal(firstname);
             Console.WriteLine("El nombre ingresado después de llamar a la función que muestra el nombre exclamación: {0}", firstname);
         }
         private void ShowNameWithExclamationByRef(ref string firstText)
