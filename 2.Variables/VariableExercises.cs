@@ -4,14 +4,14 @@ namespace CSharpExercises
 {
     public class VariableExercises {
 
-        public void Concatenador(){
+        public void Concatenate(){
             Console.WriteLine("Ingrese el nombre: ");
             string firstname = Console.ReadLine();
             Console.WriteLine("Ingrese el apellido:");
             string lastname = Console.ReadLine();
 
             Console.WriteLine("El nombre ingresado antes de llamar a la función que muestra el nombre con exclamación: {0}", firstname);
-            //ShowNameWithExclamationByRef(ref firstname);
+            // ShowNameWithExclamationByRef(ref firstname);
             ShowNameWithExclamationByVal(firstname);
             Console.WriteLine("El nombre ingresado después de llamar a la función que muestra el nombre exclamación: {0}", firstname);
         }

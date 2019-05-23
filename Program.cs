@@ -6,29 +6,43 @@ namespace CSharpExercises
     {
         static void Main(string[] args)
         {
-            Console.Write("Ingrese la opción que desea realizar (1,2 o 3): ");
-            string choosedOption = Console.ReadLine();
-            if(choosedOption=="1")
+            Console.WriteLine("Ingrese opción:");
+            string opcion = Console.ReadLine();
+            switch(opcion)
             {
-            //1.
-            ConsoleExercises console = new ConsoleExercises();
-            console.AskAge();
+                case "1":
+                    //1.
+                    ConsoleExercises console = new ConsoleExercises();
+                    console.AskAge();
+                    break;
 
-            //Pedir nombre, apellido y documento e imprimir toda la información al final.
-            } else if(choosedOption=="2")
-            {
-            //2.
-            VariableExercises variable = new VariableExercises();
-            variable.Concatenador();
-            } else if (choosedOption=="3")
-            {            
-            //3.
-            DataTypeExercises dataType = new DataTypeExercises();
-            dataType.ValueSum();
-            }
-            else
-            {
-                Console.WriteLine("La opción ingresada no existe.");
+                //Pedir nombre, apellido y documento e imprimir toda la información al final.
+                case "2":
+                    //2.
+                    VariableExercises variable = new VariableExercises();
+                    variable.Concatenate();
+                    break;                
+                
+                case "3":
+                    //3.
+                    DataTypeExercises dataType = new DataTypeExercises();
+                    dataType.ValueSum();
+                    break;
+                
+                case "4":
+                    //4. 
+                    ControlSentencesExercises control = new ControlSentencesExercises();
+                    control.Switch();
+                    break;
+
+                case "5":
+                    StringExercises cadenaTexto = new StringExercises();
+                    cadenaTexto.HandleString();
+                    break;
+                
+                default:
+                    Console.WriteLine("invalid option");
+                    break;
             }
         }
     }
