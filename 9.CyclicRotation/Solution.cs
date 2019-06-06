@@ -1,3 +1,14 @@
+//while(K>0)
+            //{
+            //    swap = A[A.Length-1];
+            //    for(int i=A.Length-2; i>=0 ; i--)
+            //    {
+            //        A[i+1] = A[i];
+            //    }
+            //    A[0] = swap;
+            //    K--;
+            //}
+
 using System;
 
 namespace _9.CyclicRotation
@@ -5,7 +16,7 @@ namespace _9.CyclicRotation
     public class Solution
     {
         public int[] solution(int[] A, int K){
-            int swap=0, i=A.Length-1;
+            int swap = 0, i = A.Length-1;
             while(K>0 && i>=0)
             {
                 if(i == A.Length-1)
@@ -25,21 +36,21 @@ namespace _9.CyclicRotation
                     i = A.Length-1;
                 }
             }
-            /*while(K>0)
+            
+            /*int j = 0;
+            for(int i = K; i < A.Length; i++)
             {
-                swap = A[A.Length-1];
-                for(int i=A.Length-2; i>=0 ; i--)
+                Console.WriteLine();
+                j++;
+                if(i == A.Length-1)
                 {
-                    A[i+1] = A[i];
+                    i = -1;
                 }
-                A[0] = swap;
-                K--;
+                if(j == A.Length)
+                {
+                    i = A.Length;
+                }
             }*/
-
-            for(i=0 ; i<A.Length; i++)
-            {
-                Console.WriteLine(A[i]);
-            }
 
             return A;
         }

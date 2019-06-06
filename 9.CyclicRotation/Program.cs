@@ -8,7 +8,12 @@ namespace _9.CyclicRotation
         {
             Solution sol = new Solution();
             int[] array = new[]{3, 8, 9, 7, 6};
-            Console.WriteLine($"Result: {sol.solution(array, 3)}");
+            array = sol.solution(array,3);
+            for(int i=0; i<array.Length ; i++)
+            {
+                Console.Write($"{array[i]}, ");
+            }
+            Console.WriteLine();
         }
     }
 }
