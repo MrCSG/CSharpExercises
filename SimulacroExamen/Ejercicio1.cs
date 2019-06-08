@@ -10,7 +10,7 @@ namespace SimulacroExamen
             cotizacion = decimal.Parse(Console.ReadLine());
             Console.Write("Cantidad a comprar: ");
             cantDolar = decimal.Parse(Console.ReadLine());
-            Console.WriteLine($"Necesitará {(cotizacion*cantDolar)*1.05d} AR$ para comprar {cantDolar} U$D.");
+            Console.WriteLine($"Necesitará {(cotizacion*cantDolar)*1.05M} AR$ para comprar {cantDolar} U$D.");
         }
     }
 }

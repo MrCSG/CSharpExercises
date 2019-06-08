@@ -8,7 +8,7 @@ namespace SimulacroExamen
         {
             //Ejercicio1.CostoDolar();
             //Ejercicio2.MayorElemento();
-            Ejercicio3.Figuras();
+            //Ejercicio3.Figuras();
             
             Console.ReadLine();
         }

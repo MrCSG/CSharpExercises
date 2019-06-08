@@ -1,0 +1,27 @@
+4) El CLR es el que se encarga de traducir el lenguaje de programación de .Net a un lenguaje 
+que la máquina pueda entender para que realice las tareas que se le indican.
+
+Los BCL son las funcionas básicas que usa todo lenguaje de programación, son las que vienen 
+por defecto al crear una nueva aplicación, por ejemplo los tipos de datos.
+
+5)Porque las funciones Static no necesitan ser inicializadas para poder usarse, y si Main 
+no fuese static necesitaria de otra funcion o clase para poder usarse.
+
+6)Using sirve para hacer llamado a clases de otros espacios de trabajo y evitar tener que 
+repetir constantemente la creación de esa referencia.
+
+Ejemplo con Using:
+    Using System.Collection.Generic;
+
+    class Ejemplo
+    {
+        List<Lista> miLista1 = new List<Lista>();
+        List<Lista> miLista2 = new List<Lista>();
+    }
+
+Ejemplo Sin Using:
+    class Ejemplo
+    {
+        System.Collection.Generic.List<Lista> miLista1 = new System.Collection.Generic.List<Lista>();
+        System.Collection.Generic.List<Lista> miLista2 = new System.Collection.Generic.List<Lista>();
+    }
